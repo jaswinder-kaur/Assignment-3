@@ -1,0 +1,99 @@
+{% extends 'base/base.html' %}
+{%load static %}
+{%block content%}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+<div class="row" >
+<div class="center">
+<h4 class="blue-text" style="font-family: 'Times New Roman', cursive;margin: 4rem 0 4% 0;font-size:4rem">Looking for a room! </h4>
+<h4 class="blue-text" style="font-family: 'Times New Roman', cursive;margin: 0 0 4% 0;line-height: 25%;font-size:2.5rem">We have it ready for you...</h4>
+</div>
+<div class="row">
+    <div class="container">
+    <h3 class="center" style="font-family: 'Times New Roman', cursive;margin-bottom:7%;margin-top:5%">Room for Every Size & Need</h3>
+        <div class="col l4 m6 s12">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{% static 'christopher-jolly-GqbU78bdJFM-unsplash.jpg'%}" alt="" class="responsive">
+                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light red white-text" style="font-size:0.8rem">&dollar; 1000</a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title brown-text">
+                        Single Bed Room
+                    </span>
+                </div>
+            </div>
+            {% csrf_token %}
+        </div>
+             <div class="col l4 m6 s12">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{% static 'stephen-leonardi--TsLaYk1DLM-unsplash.jpg'%}" alt="" class="responsive">
+                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light red white-text" style="font-size:0.8rem">&dollar; 1700</a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title brown-text">
+                        Double Bed Room
+                    </span>
+                </div>
+            </div>
+        </div>
+             <div class="col l4 m6 s12">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{% static 'ralph-kayden-FqqiAvJejto-unsplash.jpg'%}" alt="" class="responsive">
+                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light red white-text" style="font-size:0.8rem">&dollar; 1500</a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title brown-text">
+                       King-sized Bed Room
+                    </span>
+                </div>
+            </div>
+        </div>
+          <div class="col l4 m6 s12">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{% static 'roberto-nickson-EeeKjwm2vDo-unsplash.jpg'%}" alt="" class="responsive">
+                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light red white-text" style="font-size:0.8rem">&dollar; 2500</a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title brown-text">
+Room with View
+                    </span>
+                </div>
+            </div>
+        </div>
+               <div class="col l4 m6 s12">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{% static 'keytion-7LR0xIBbUUI-unsplash.jpg'%}" alt="" class="responsive">
+                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light red white-text" style="font-size:0.8rem">&dollar; 2000</a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title brown-text">
+                      Double room with working tables
+                    </span>
+                </div>
+            </div>
+        </div>
+               <div class="col l4 m6 s12">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{% static 'dan-ramsay-_hDFophEkyM-unsplash.jpg'%}" alt="" class="responsive">
+                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light red white-text" style="font-size:0.8rem">&dollar; 5000</a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title brown-text">
+                      Sea facing rooms
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+{% endblock %}
